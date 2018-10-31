@@ -1,0 +1,34 @@
+{
+  "name": "",
+  "version": "",
+  "scripts": {
+    "postinstall": "npm run webpack",
+    "webpack": "webpack",
+    "build": "npm run webpack -- --watch --mode=development",
+    "start:dev": "npm run build dist && nodemon server.js --ignore dist --ignore src"
+  },
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react": "^6.24.1",
+    "csvtojson": "^2.0.8",
+    "express": "^4.16.3",
+    "npm": "^6.4.1",
+    "pdf-parse": "^1.0.8",
+    "react": "^16.6.0",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
